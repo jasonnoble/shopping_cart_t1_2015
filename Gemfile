@@ -5,14 +5,14 @@ ruby '2.1.5'
 group :development, :test do
   gem 'rspec-rails'
   gem 'guard-rspec', require: false
-	gem 'guard-bundler'
-	gem 'factory_girl_rails'
-	gem 'capybara'
+  gem 'guard-bundler'
+  gem 'factory_girl_rails'
+  gem 'capybara'
   gem 'launchy'
-	gem 'faker'
-	gem 'bcrypt'
+  gem 'faker'
+  gem 'bcrypt'
   gem 'sqlite3'
-	gem 'shoulda-matchers'
+  gem 'shoulda-matchers'
 end
 
 group :production do
