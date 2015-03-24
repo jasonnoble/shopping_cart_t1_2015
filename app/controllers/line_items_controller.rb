@@ -10,7 +10,7 @@ class LineItemsController < ApplicationController
 
     respond_to do |format|
       if @line_item.save
-        format.html { redirect_to @line_item.cart, notice: 'Line item was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Product added to cart' }
       else
         format.html { redirect_to @cart, notice: 'Unable to add item to cart.' }
       end

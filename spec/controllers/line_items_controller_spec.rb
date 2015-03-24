@@ -14,10 +14,10 @@ describe LineItemsController do
         }.to change(cart.line_items, :count).by(1)
       end
 
-      it "redirects to the cart" do
+      it "redirects to the home page" do
         post :create, valid_attributes, valid_session
-        expect(response).to redirect_to(cart)
-        expect(flash[:notice]).to include("Line item was successfully created.")
+        expect(response).to redirect_to(root_path)
+        expect(flash[:notice]).to include("Product added to cart")
       end
     end
 
